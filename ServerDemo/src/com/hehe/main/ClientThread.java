@@ -54,6 +54,8 @@ public class ClientThread extends Thread {
 				//is.read(recvbuf, 0, 556);
 				readres = is.read(recvbuf, 0, 556);
 				if (readres>0) {
+					Message mes = ObjectTool.getMessageFormBytes(recvbuf);
+					System.out.print(mes.data);
 					sendMessageToEachClient(recvbuf);
 				}else {
 					if (readres ==0) {
