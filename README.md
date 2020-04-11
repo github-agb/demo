@@ -8,6 +8,6 @@
 
 client端发送结构体，服务器端接收，并用java对象封装。可以打印输出
 
-封装学习参考：
+封装学习参考这位大佬的博客：
 
 https://blog.csdn.net/DoasIsay/article/details/103797033
